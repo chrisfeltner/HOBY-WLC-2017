@@ -16,6 +16,8 @@
 		83D93C481EC62A8B00636693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D93C461EC62A8B00636693 /* LaunchScreen.storyboard */; };
 		83D93C521EC62BF800636693 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D93C511EC62BF800636693 /* GoogleService-Info.plist */; };
 		83D93C541EC6302B00636693 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C531EC6302B00636693 /* ScheduleViewController.swift */; };
+		83D93C571EC66EF000636693 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C561EC66EF000636693 /* Message.swift */; };
+		83D93C5A1EC671DD00636693 /* ViewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C591EC671DD00636693 /* ViewMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		83D93C491EC62A8B00636693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83D93C511EC62BF800636693 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83D93C531EC6302B00636693 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		83D93C561EC66EF000636693 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		83D93C591EC671DD00636693 /* ViewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMessageViewController.swift; sourceTree = "<group>"; };
 		9EA99F639DDECB10FF9A1A6D /* Pods-HOBY WLC 2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOBY WLC 2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOBY WLC 2017/Pods-HOBY WLC 2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,16 +81,34 @@
 			isa = PBXGroup;
 			children = (
 				83D93C3B1EC62A8B00636693 /* AppDelegate.swift */,
-				83D93C3D1EC62A8B00636693 /* ClockViewController.swift */,
-				83D93C3F1EC62A8B00636693 /* MessageViewController.swift */,
 				83D93C411EC62A8B00636693 /* Main.storyboard */,
-				83D93C531EC6302B00636693 /* ScheduleViewController.swift */,
+				83D93C551EC66E8D00636693 /* ViewControllers */,
 				83D93C441EC62A8B00636693 /* Assets.xcassets */,
 				83D93C461EC62A8B00636693 /* LaunchScreen.storyboard */,
 				83D93C491EC62A8B00636693 /* Info.plist */,
 				83D93C511EC62BF800636693 /* GoogleService-Info.plist */,
+				83D93C581EC66EF500636693 /* Models */,
 			);
 			path = "HOBY WLC 2017";
+			sourceTree = "<group>";
+		};
+		83D93C551EC66E8D00636693 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83D93C3D1EC62A8B00636693 /* ClockViewController.swift */,
+				83D93C531EC6302B00636693 /* ScheduleViewController.swift */,
+				83D93C3F1EC62A8B00636693 /* MessageViewController.swift */,
+				83D93C591EC671DD00636693 /* ViewMessageViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83D93C581EC66EF500636693 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83D93C561EC66EF000636693 /* Message.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		D7A9647840F42D64A9DA30EB /* Frameworks */ = {
@@ -224,8 +246,10 @@
 			files = (
 				83D93C401EC62A8B00636693 /* MessageViewController.swift in Sources */,
 				83D93C3C1EC62A8B00636693 /* AppDelegate.swift in Sources */,
+				83D93C571EC66EF000636693 /* Message.swift in Sources */,
 				83D93C3E1EC62A8B00636693 /* ClockViewController.swift in Sources */,
 				83D93C541EC6302B00636693 /* ScheduleViewController.swift in Sources */,
+				83D93C5A1EC671DD00636693 /* ViewMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

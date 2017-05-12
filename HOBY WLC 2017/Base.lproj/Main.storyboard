@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Messages-->
+        <!--Message View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="MessageViewController" customModule="HOBY_WLC_2017" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XIv-N6-bzq">
-                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <rect key="frame" x="16" y="64" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -35,14 +35,15 @@
                             <constraint firstItem="XIv-N6-bzq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="n2S-yj-Z6I"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Messages" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="QJg-o2-H0d"/>
                     <connections>
                         <outlet property="messageTableView" destination="XIv-N6-bzq" id="ejA-Gl-Xfc"/>
+                        <segue destination="4VY-TO-vLI" kind="show" identifier="ViewMessageSegue" id="5yr-Yk-bTR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
         </scene>
         <!--Clock-->
         <scene sceneID="wg7-f3-ORb">
@@ -97,7 +98,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8qM-X5-yPi" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="h7A-qE-YSP" kind="relationship" relationship="viewControllers" id="sPV-zw-3fD"/>
                     </connections>
@@ -139,6 +140,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8aq-9g-jns" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10" y="804"/>
+        </scene>
+        <!--View Message View Controller-->
+        <scene sceneID="SRK-vz-FM1">
+            <objects>
+                <viewController id="4VY-TO-vLI" customClass="ViewMessageViewController" customModule="HOBY_WLC_2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VLw-20-44E"/>
+                        <viewControllerLayoutGuide type="bottom" id="kIp-uQ-0TH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XbY-Vq-ADI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" backIndicatorImage="first" translatesAutoresizingMaskIntoConstraints="NO" id="zRF-na-637">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="Sf5-cb-623"/>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uqd-fm-eyL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" mediaPlaybackAllowsAirPlay="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRY-Ki-oo8">
+                                <rect key="frame" x="16" y="64" width="343" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XRY-Ki-oo8" secondAttribute="trailing" id="ANt-99-yFF"/>
+                            <constraint firstItem="XRY-Ki-oo8" firstAttribute="leading" secondItem="XbY-Vq-ADI" secondAttribute="leadingMargin" id="gFR-C5-WXj"/>
+                            <constraint firstItem="XRY-Ki-oo8" firstAttribute="top" secondItem="VLw-20-44E" secondAttribute="bottom" id="mqo-IR-1Hj"/>
+                            <constraint firstItem="kIp-uQ-0TH" firstAttribute="top" secondItem="XRY-Ki-oo8" secondAttribute="bottom" id="yR9-a8-68m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageWebView" destination="XRY-Ki-oo8" id="HKP-9j-VOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTT-qH-l0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="-321.58920539730138"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="DHA-az-oPh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8qM-X5-yPi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Messages" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aj3-JT-ctN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="aga-tu-KD8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xe-Ej-QVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
     </scenes>
     <resources>

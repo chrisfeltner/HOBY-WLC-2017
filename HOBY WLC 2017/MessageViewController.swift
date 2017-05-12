@@ -7,23 +7,43 @@
 //
 
 import UIKit
+import Firebase
 
 class MessageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var messageTableView: UITableView!
+    var messages : [Message] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.messageTableView.delegate = self
+        self.messageTableView.dataSource = self
+        FIRDatabase.database().reference().child("messages").observe((FIRDataEventType.childAdded), with: { (snapshot) in
+            print(snapshot)
+            let snapshotValue = snapshot.value as? NSDictionary
+            let myMessage = Message()
+            myMessage.subject = snapshotValue?["subject"] as! String
+            self.messages.append(myMessage)
+            print(self.messages)
+            self.messageTableView.reloadData()
+        })
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        print(messages.count)
+        return messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        cell.textLabel?.text = messages[indexPath.row].subject
+        print(cell)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let myMessage = messages[indexPath.row]
+        self.performSegue(withIdentifier: "ViewMessageSegue", sender: myMessage)
     }
 
     override func didReceiveMemoryWarning() {
