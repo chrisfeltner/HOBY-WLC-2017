@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		769F9891005C9CA74CD0A44E /* Pods_HOBY_WLC_2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB44461A0F696B631EFA109 /* Pods_HOBY_WLC_2017.framework */; };
 		83D93C3C1EC62A8B00636693 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C3B1EC62A8B00636693 /* AppDelegate.swift */; };
-		83D93C3E1EC62A8B00636693 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C3D1EC62A8B00636693 /* FirstViewController.swift */; };
-		83D93C401EC62A8B00636693 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C3F1EC62A8B00636693 /* SecondViewController.swift */; };
+		83D93C3E1EC62A8B00636693 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C3D1EC62A8B00636693 /* ClockViewController.swift */; };
+		83D93C401EC62A8B00636693 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C3F1EC62A8B00636693 /* MessageViewController.swift */; };
 		83D93C431EC62A8B00636693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D93C411EC62A8B00636693 /* Main.storyboard */; };
 		83D93C451EC62A8B00636693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D93C441EC62A8B00636693 /* Assets.xcassets */; };
 		83D93C481EC62A8B00636693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D93C461EC62A8B00636693 /* LaunchScreen.storyboard */; };
+		83D93C521EC62BF800636693 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83D93C511EC62BF800636693 /* GoogleService-Info.plist */; };
+		83D93C541EC6302B00636693 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C531EC6302B00636693 /* ScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30BFA5A8051476883E681D9B /* Pods-HOBY WLC 2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOBY WLC 2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-HOBY WLC 2017/Pods-HOBY WLC 2017.release.xcconfig"; sourceTree = "<group>"; };
+		5CB44461A0F696B631EFA109 /* Pods_HOBY_WLC_2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOBY_WLC_2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D93C381EC62A8B00636693 /* HOBY WLC 2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HOBY WLC 2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D93C3B1EC62A8B00636693 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83D93C3D1EC62A8B00636693 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		83D93C3F1EC62A8B00636693 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		83D93C3D1EC62A8B00636693 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		83D93C3F1EC62A8B00636693 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		83D93C421EC62A8B00636693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83D93C441EC62A8B00636693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D93C471EC62A8B00636693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83D93C491EC62A8B00636693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83D93C511EC62BF800636693 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83D93C531EC6302B00636693 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		9EA99F639DDECB10FF9A1A6D /* Pods-HOBY WLC 2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOBY WLC 2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOBY WLC 2017/Pods-HOBY WLC 2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769F9891005C9CA74CD0A44E /* Pods_HOBY_WLC_2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F8593CE3D5652DA10710F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EA99F639DDECB10FF9A1A6D /* Pods-HOBY WLC 2017.debug.xcconfig */,
+				30BFA5A8051476883E681D9B /* Pods-HOBY WLC 2017.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		83D93C2F1EC62A8B00636693 = {
 			isa = PBXGroup;
 			children = (
 				83D93C3A1EC62A8B00636693 /* HOBY WLC 2017 */,
 				83D93C391EC62A8B00636693 /* Products */,
+				4F8593CE3D5652DA10710F0F /* Pods */,
+				D7A9647840F42D64A9DA30EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +77,24 @@
 			isa = PBXGroup;
 			children = (
 				83D93C3B1EC62A8B00636693 /* AppDelegate.swift */,
-				83D93C3D1EC62A8B00636693 /* FirstViewController.swift */,
-				83D93C3F1EC62A8B00636693 /* SecondViewController.swift */,
+				83D93C3D1EC62A8B00636693 /* ClockViewController.swift */,
+				83D93C3F1EC62A8B00636693 /* MessageViewController.swift */,
 				83D93C411EC62A8B00636693 /* Main.storyboard */,
+				83D93C531EC6302B00636693 /* ScheduleViewController.swift */,
 				83D93C441EC62A8B00636693 /* Assets.xcassets */,
 				83D93C461EC62A8B00636693 /* LaunchScreen.storyboard */,
 				83D93C491EC62A8B00636693 /* Info.plist */,
+				83D93C511EC62BF800636693 /* GoogleService-Info.plist */,
 			);
 			path = "HOBY WLC 2017";
+			sourceTree = "<group>";
+		};
+		D7A9647840F42D64A9DA30EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CB44461A0F696B631EFA109 /* Pods_HOBY_WLC_2017.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83D93C4C1EC62A8B00636693 /* Build configuration list for PBXNativeTarget "HOBY WLC 2017" */;
 			buildPhases = (
+				27CA5BB9489574377500BA29 /* [CP] Check Pods Manifest.lock */,
 				83D93C341EC62A8B00636693 /* Sources */,
 				83D93C351EC62A8B00636693 /* Frameworks */,
 				83D93C361EC62A8B00636693 /* Resources */,
+				6FF8C49326FD7D9DEC053E24 /* [CP] Embed Pods Frameworks */,
+				FDB4D1DD7DFAD92F289EEFAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +132,7 @@
 				TargetAttributes = {
 					83D93C371EC62A8B00636693 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = A47892JV82;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D93C481EC62A8B00636693 /* LaunchScreen.storyboard in Resources */,
+				83D93C521EC62BF800636693 /* GoogleService-Info.plist in Resources */,
 				83D93C451EC62A8B00636693 /* Assets.xcassets in Resources */,
 				83D93C431EC62A8B00636693 /* Main.storyboard in Resources */,
 			);
@@ -134,14 +169,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27CA5BB9489574377500BA29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FF8C49326FD7D9DEC053E24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOBY WLC 2017/Pods-HOBY WLC 2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB4D1DD7DFAD92F289EEFAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOBY WLC 2017/Pods-HOBY WLC 2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83D93C341EC62A8B00636693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D93C401EC62A8B00636693 /* SecondViewController.swift in Sources */,
+				83D93C401EC62A8B00636693 /* MessageViewController.swift in Sources */,
 				83D93C3C1EC62A8B00636693 /* AppDelegate.swift in Sources */,
-				83D93C3E1EC62A8B00636693 /* FirstViewController.swift in Sources */,
+				83D93C3E1EC62A8B00636693 /* ClockViewController.swift in Sources */,
+				83D93C541EC6302B00636693 /* ScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +348,10 @@
 		};
 		83D93C4D1EC62A8B00636693 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA99F639DDECB10FF9A1A6D /* Pods-HOBY WLC 2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A47892JV82;
 				INFOPLIST_FILE = "HOBY WLC 2017/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "c.HOBY-WLC-2017";
@@ -276,8 +362,10 @@
 		};
 		83D93C4E1EC62A8B00636693 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30BFA5A8051476883E681D9B /* Pods-HOBY WLC 2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A47892JV82;
 				INFOPLIST_FILE = "HOBY WLC 2017/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "c.HOBY-WLC-2017";
@@ -305,6 +393,7 @@
 				83D93C4E1EC62A8B00636693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
