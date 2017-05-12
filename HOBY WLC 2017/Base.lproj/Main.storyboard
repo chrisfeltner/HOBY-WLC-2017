@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Messages-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="MessageViewController" customModule="HOBY_WLC_2017" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                             <constraint firstItem="XIv-N6-bzq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="n2S-yj-Z6I"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="messageTableView" destination="XIv-N6-bzq" id="ejA-Gl-Xfc"/>
                     </connections>
@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Second-->
+        <!--Clock-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ClockViewController" customModule="HOBY_WLC_2017" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                             <constraint firstItem="OVb-vN-34u" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="40" id="RRc-Wr-ZmL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Clock" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="clockLabel" destination="qLA-di-Rbb" id="ZSs-H8-0XQ"/>
                         <outlet property="titleLabel" destination="OVb-vN-34u" id="D7V-5C-Qbc"/>
@@ -106,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Schedule-->
         <scene sceneID="TeJ-BD-PfL">
             <objects>
                 <viewController id="h7A-qE-YSP" customClass="ScheduleViewController" customModule="HOBY_WLC_2017" customModuleProvider="target" sceneMemberID="viewController">
@@ -131,7 +131,7 @@
                             <constraint firstItem="AsO-SO-BDL" firstAttribute="top" secondItem="g8n-0j-kVE" secondAttribute="bottom" id="Rsx-pn-2fu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8c3-sT-CwF"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="8c3-sT-CwF"/>
                     <connections>
                         <outlet property="scheduleTableView" destination="AsO-SO-BDL" id="qzO-Cg-Sz0"/>
                     </connections>
