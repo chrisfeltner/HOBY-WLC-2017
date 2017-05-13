@@ -11,12 +11,13 @@ import UIKit
 class ViewMessageViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet weak var messageWebView: UIWebView!
+    var myMessage = Message()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         messageWebView.delegate = self
-        let url =  URL(string: "https://developer.apple.com/reference/uikit/uiwebview")
+        let url =  URL(string: myMessage.url)
         let request = URLRequest(url: url!)
         messageWebView.loadRequest(request)
     }

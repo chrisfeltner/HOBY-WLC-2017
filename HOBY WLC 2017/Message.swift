@@ -12,4 +12,5 @@ class Message
 {
     var message = ""
     var subject = ""
+    var url = ""
 }

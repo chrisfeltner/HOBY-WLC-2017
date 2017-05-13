@@ -23,6 +23,7 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
             let snapshotValue = snapshot.value as? NSDictionary
             let myMessage = Message()
             myMessage.subject = snapshotValue?["subject"] as! String
+            myMessage.url = snapshotValue?["url"] as! String
             self.messages.append(myMessage)
             print(self.messages)
             self.messageTableView.reloadData()
@@ -49,6 +50,11 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! ViewMessageViewController
+        nextVC.myMessage = sender as! Message
     }
 
 
