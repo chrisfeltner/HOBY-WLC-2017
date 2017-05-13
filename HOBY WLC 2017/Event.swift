@@ -11,6 +11,7 @@ import Foundation
 class Event
 {
     var name = ""
-    var startTime = ""
-    var endTime = ""
+    var startTime : Int64 = 0
+    var endTime : Int64 = 0
+    var day : Int64 = -1
 }

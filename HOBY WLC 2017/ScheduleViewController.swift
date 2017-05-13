@@ -12,9 +12,24 @@ import Firebase
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var scheduleTableView: UITableView!
+    var events : [Event] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scheduleTableView.delegate = self
+        scheduleTableView.dataSource = self
+        
+        FIRDatabase.database().reference().child("events").observe((FIRDataEventType.childAdded), with: { (snapshot) in
+            print(snapshot)
+            let myEvent = Event()
+            let snapshotValue = snapshot.value as? NSDictionary
+            myEvent.name = snapshotValue?["name"] as! String
+            myEvent.day = snapshotValue?["day"] as! Int64
+            myEvent.startTime = snapshotValue?["startTime"] as! Int64
+            myEvent.endTime = snapshotValue?["endTime"] as! Int64
+            self.events.append(myEvent)
+            self.scheduleTableView.reloadData()
+        })
         // Do any additional setup after loading the view.
     }
 
@@ -24,11 +39,12 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return events.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        cell.textLabel?.text = events[indexPath.row].name
         return cell
     }
     
