@@ -9,6 +9,15 @@
 import UIKit
 import Firebase
 
+class ScheduleEntryCell: UITableViewCell
+{
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var startTimeLabel: UILabel!
+    @IBOutlet weak var endTimeLabel: UILabel!
+
+}
+
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var scheduleTableView: UITableView!
@@ -24,9 +33,9 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
             let myEvent = Event()
             let snapshotValue = snapshot.value as? NSDictionary
             myEvent.name = snapshotValue?["name"] as! String
-            myEvent.day = snapshotValue?["day"] as! Int64
-            myEvent.startTime = snapshotValue?["startTime"] as! Int64
-            myEvent.endTime = snapshotValue?["endTime"] as! Int64
+            myEvent.day = snapshotValue?["day"] as! Int
+            myEvent.startTime = snapshotValue?["startTime"] as! Int
+            myEvent.endTime = snapshotValue?["endTime"] as! Int
             self.events.append(myEvent)
             self.scheduleTableView.reloadData()
         })
@@ -43,8 +52,11 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = events[indexPath.row].name
+        let cell = scheduleTableView.dequeueReusableCell(withIdentifier: "ScheduleEntryCell", for: indexPath) as! ScheduleEntryCell
+        let index = indexPath.row
+        cell.nameLabel?.text = events[index].name
+        cell.startTimeLabel?.text = String(events[index].startTime)
+        cell.endTimeLabel?.text = String(events[index].endTime)
         return cell
     }
     
