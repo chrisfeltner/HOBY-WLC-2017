@@ -18,6 +18,7 @@
 		83D93C541EC6302B00636693 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C531EC6302B00636693 /* ScheduleViewController.swift */; };
 		83D93C571EC66EF000636693 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C561EC66EF000636693 /* Message.swift */; };
 		83D93C5A1EC671DD00636693 /* ViewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C591EC671DD00636693 /* ViewMessageViewController.swift */; };
+		83D93C5C1EC686C500636693 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D93C5B1EC686C500636693 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		83D93C531EC6302B00636693 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		83D93C561EC66EF000636693 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		83D93C591EC671DD00636693 /* ViewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMessageViewController.swift; sourceTree = "<group>"; };
+		83D93C5B1EC686C500636693 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9EA99F639DDECB10FF9A1A6D /* Pods-HOBY WLC 2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOBY WLC 2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOBY WLC 2017/Pods-HOBY WLC 2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				83D93C561EC66EF000636693 /* Message.swift */,
+				83D93C5B1EC686C500636693 /* Event.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				83D93C571EC66EF000636693 /* Message.swift in Sources */,
 				83D93C3E1EC62A8B00636693 /* ClockViewController.swift in Sources */,
 				83D93C541EC6302B00636693 /* ScheduleViewController.swift in Sources */,
+				83D93C5C1EC686C500636693 /* Event.swift in Sources */,
 				83D93C5A1EC671DD00636693 /* ViewMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

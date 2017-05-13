@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ScheduleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
